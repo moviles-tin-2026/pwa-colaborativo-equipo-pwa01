@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/png" href="./pwa/icons/icon_512.png">
+    <link rel="apple-touch-icon" href="./pwa/icons/apple-touch-icon_180.png">
+    <link rel="stylesheet" href="./css/converter.css">
+    <link rel="stylesheet" href="./pwa/css/native-like-experience.css">
+    <link rel="manifest" href="./manifest.json">
+    <title>Temperature converter</title>
+    <meta name="application-name" content="Temperature converter">
+    <!-- Open Graph / Twitter Card -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://facu100201.github.io/AppMovil2026/260528/">
+    <meta property="og:title" content="Temperature Converter">
+    <meta property="og:description" content="A basic temperature converter application that can convert to and from Celsius, Kelvin, and Fahrenheit">
+    <meta property="og:site_name" content="Temperature Converter">
+    <meta property="og:image" content="https://facu100201.github.io/AppMovil2026/260528/pwa/icons/icon_512.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Temperature Converter">
+    <meta name="twitter:description" content="A basic temperature converter application that can convert to and from Celsius, Kelvin, and Fahrenheit">
+    <meta name="twitter:image" content="https://facu100201.github.io/AppMovil2026/260528/pwa/icons/icon_512.png">
+  </head>
+  <body>
+    <form id="converter">
+      <label for="input-temp">temperature</label>
+      <input type="text" id="input-temp" name="input-temp" value="20" />
+      <label for="input-unit">from</label>
+      <select id="input-unit" name="input-unit">
+        <option value="c" selected>Celsius</option>
+        <option value="f">Fahrenheit</option>
+        <option value="k">Kelvin</option>
+      </select>
+      <label for="output-unit">to</label>
+      <select id="output-unit" name="output-unit">
+        <option value="c">Celsius</option>
+        <option value="f" selected>Fahrenheit</option>
+        <option value="k">Kelvin</option>
+      </select>
+      <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
+    </form>
+    <script src="./js/converter.js"></script>
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./js/sw.js', { scope: './' });
+      }
+    </script>
+  </body>
+</html>
