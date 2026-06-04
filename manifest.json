@@ -1,0 +1,50 @@
+{
+    "name": "Temperature Converter App",
+    "short_name": "Temperature Converter",
+    "description": "Converts temperatures between Celsius, Fahrenheit and Kelvin",
+    "lang": "en-us",
+    "theme_color": "#8dab69",
+    "background_color": "#3c7f06",
+    "display": "standalone",
+    "orientation": "any",
+    "scope": "/AppMovil2026/260528/",
+    "start_url": "/AppMovil2026/260528/",
+    "icons": [
+        {
+            "src": "./pwa/icons/icon_96.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "./pwa/icons/icon_144.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "./pwa/icons/icon_192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "./pwa/icons/icon_512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "./pwa/icons/maskable_192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "./pwa/icons/maskable_512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
